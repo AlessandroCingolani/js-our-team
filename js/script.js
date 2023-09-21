@@ -1,3 +1,5 @@
+const div = document.querySelector('.container')
+
 // Create array with objects
 
 const ourTeam = [
@@ -32,3 +34,18 @@ const ourTeam = [
     imgProfile:'barbara-ramos-graphic-designer.jpg'
   }
 ];
+
+// cicle for of 
+for(let member of ourTeam){
+  console.log(member.name);
+  console.log(member.role);
+  console.log(member.imgProfile);
+  console.log('================');
+  div.innerHTML += `
+  <div class ='card'>
+  ${member.imgProfile} ${member.name} ${member.role}
+  </div>`
+}
+
+
+console.log(ourTeam);
