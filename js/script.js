@@ -43,11 +43,11 @@ for(let member of ourTeam){
   console.log('================');
   div.innerHTML += `
   <div class ='col-4'>
-  <div class ='card'>
-  <img src="img/${member.imgProfile}"><br> 
-  <h5>${member.name}</h5> 
-  <p>${member.role}</p> 
-  </div>
+    <div class ='card mb-4'>
+      <img src="img/${member.imgProfile}"> 
+      <h5>${member.name}</h5> 
+      <p>${member.role}</p> 
+    </div>
   </div>`
 }
 
