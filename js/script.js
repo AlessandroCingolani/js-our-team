@@ -1,4 +1,4 @@
-const div = document.querySelector('.container')
+const div = document.querySelector('.row')
 
 // Create array with objects
 
@@ -42,8 +42,12 @@ for(let member of ourTeam){
   console.log(member.imgProfile);
   console.log('================');
   div.innerHTML += `
+  <div class ='col-4'>
   <div class ='card'>
-  ${member.imgProfile} ${member.name} ${member.role}
+  <img src="img/${member.imgProfile}"><br> 
+  <h5>${member.name}</h5> 
+  <p>${member.role}</p> 
+  </div>
   </div>`
 }
 
