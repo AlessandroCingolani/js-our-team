@@ -50,6 +50,3 @@ for(let member of ourTeam){
     </div>
   </div>`
 }
-
-
-console.log(ourTeam);
