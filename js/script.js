@@ -37,6 +37,10 @@ const ourTeam = [
 
 // cicle for of 
 for(let member of ourTeam){
+  console.log(member.name);
+  console.log(member.role);
+  console.log(member.imgProfile);
+  console.log('================');
   div.innerHTML += `
   <div class ='col-4'>
     <div class ='card mb-4'>
