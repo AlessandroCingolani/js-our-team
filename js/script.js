@@ -37,15 +37,11 @@ const ourTeam = [
 
 // cicle for of 
 for(let member of ourTeam){
-  console.log(member.name);
-  console.log(member.role);
-  console.log(member.imgProfile);
-  console.log('================');
   div.innerHTML += `
   <div class ='col-4'>
     <div class ='card mb-4'>
       <img src="img/${member.imgProfile}"> 
-      <h5>${member.name}</h5> 
+      <h5 class ='pt-3'>${member.name}</h5> 
       <p>${member.role}</p> 
     </div>
   </div>`
